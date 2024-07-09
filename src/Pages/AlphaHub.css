@@ -1,0 +1,49 @@
+.tab-switcher-container {
+    border-radius: 1000px;
+    border: 1px solid rgba(255, 255, 255, .07);
+    background: rgba(255, 255, 255, .05);
+    box-shadow: 0 4px 10px #0000001a;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    width: max-content;
+    display: flex;
+    position: relative;
+}
+
+.switcher-wrapper {
+    position: sticky;
+    z-index: 100;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.essentials-switch-container,
+.alpha-hub-switch-container {
+    display: inline-flex;
+    padding: 8px 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1000px;
+    background: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: .117px;
+    color: #fff6;
+    transition: color .5s ease;
+}
+
+.essentials-switch-container:hover,
+.alpha-hub-switch-container:hover {
+    background: rgba(255, 255, 255, .15);
+}
+
+.active-essential-switch {
+    color: #fff !important;
+}

@@ -1,0 +1,151 @@
+.flex-end-nft {
+    display: flex;
+    justify-content: end;
+    margin: 6rem 0;
+}
+
+.nft-tasks {
+    display: inline-block;
+}
+
+.learner-nft-after {
+    position: absolute;
+    margin-top: 180px;
+    left: 45%;
+    z-index: -1;
+}
+
+.ticking-tick {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1000px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    background: rgba(255, 255, 255, .05);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    color: #fff3;
+    font-size: 28px;
+    margin-left: 8px;
+}
+
+.ticking-tick i {
+    color: rgba(199, 188, 188, 0.683);
+    font-size: 24px;
+}
+
+.cat-outer-img {
+    width: 160px;
+    position: relative;
+}
+
+.cat-inner-img {
+    width: 160px;
+    height: 180px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    background: rgba(255, 255, 255, .05);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    justify-content: flex-end;
+    margin-right: 120px;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cat-inner-img::after {
+    content: "";
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+    position: absolute;
+    background: #131313;
+    top: 50%;
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 23.5px;
+
+}
+
+.cat-inner-img img {
+    width: 147px;
+    height: 165px;
+    border-radius: 20px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.lockin-lock {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1000px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    background: #131313;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(34%, 35%);
+}
+
+.lockin-lock i {
+    color: #A1A1A1;
+    font-size: 18px;
+}
+
+.nft-claim-head {
+    color: rgba(255, 255, 255, .6);
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .4);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
+
+.nft-claim-para {
+    color: rgba(255, 255, 255, .2);
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .4);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 16px;
+}
+
+.claim-btn-nft {
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, .05);
+    background: rgba(255, 255, 255, .05);
+    display: flex;
+    width: 160px;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, .4);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    cursor: not-allowed !important;
+    font-family: "Outfit", sans-serif;
+}
+
+@media screen and (max-width:800px) {
+    .flex-end-nft {
+        margin: 27rem 0 3rem;
+    }
+
+    .learner-nft-after {
+        display: none;
+    }
+}

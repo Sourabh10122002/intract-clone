@@ -1,0 +1,80 @@
+.hero-section {
+    position: relative;
+}
+
+.hero-background {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+}
+
+.hero-info {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: screen;
+    transition: top .8s ease;
+}
+
+.hero-head>img {
+    width: 235px;
+    transition: top .5s ease;
+}
+
+.hero-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-para {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-para>p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    margin-top: 22px;
+}
+
+.hero-para>p>span {
+    color: #fff;
+}
+
+.get-started {
+    margin-top: 24px;
+}
+
+.get-started>button {
+    display: inline-flex;
+    font-family: "Outfit", sans-serif;
+    padding: 10px 57px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    min-width: max-content;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, .1);
+    color: #fff;
+    background: #6435e9;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+
+@media screen and (max-width:800px) {
+    .hero-info {
+        margin-top: 80px;
+    }
+}

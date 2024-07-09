@@ -1,0 +1,179 @@
+.nav-full-container {
+    width: 100%;
+    z-index: 111;
+    position: fixed;
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#navbar li {
+    margin: 0 8px;
+    overflow: hidden;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+#mobile {
+    display: none;
+}
+
+#mobile i {
+    align-items: center;
+}
+
+#logoo {
+    padding: 0 20px;
+}
+
+.selected {
+    color: #fff;
+}
+
+.nav-right-div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.nav-input {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.television {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgb(250, 137, 34);
+    background-color: rgba(255, 255, 255, 0.07);
+    color: rgb(250, 137, 34);
+}
+
+.sign-in>button {
+    color: #000;
+    border: none;
+    white-space: nowrap;
+    background-color: #fff;
+    font-family: "Outfit", sans-serif;
+    border-radius: 4px;
+    padding: 7px 24px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.sign-in>button:hover {
+    background-color: #ffffff8e;
+}
+
+.input-search {
+    background-color: rgba(255, 255, 255, 0.07);
+    padding: 10px 16px;
+    border-radius: 100px;
+    flex-direction: row;
+}
+
+.input-search>i {
+    color: rgba(255, 255, 255, 0.6);
+    margin-right: 8px;
+}
+
+.input-search>input {
+    color: rgba(255, 255, 255, 0.6);
+    width: 400px;
+    font-size: 14px;
+    outline: none;
+    font-weight: 600;
+    border: none;
+    background: transparent;
+}
+
+.input-search>input::placeholder {
+    font-family: "Outfit", sans-serif;
+}
+
+@media screen and (max-width: 1024px) {
+    #nav {
+        padding: 8px 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 200;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 250px;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: #101010;
+        z-index: 1;
+        padding: 40px 0 0 10px;
+        transition: 0.5s ease-in-out;
+        backdrop-filter: blur(10px);
+    }
+
+    #navbar.active {
+        right: 0px;
+        z-index: 1;
+        top: 250px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #navbar li a {
+        color: white;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    #mobile i {
+        font-size: 16px;
+        cursor: pointer;
+        color: white;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .input-search {
+        display: none;
+    }
+}

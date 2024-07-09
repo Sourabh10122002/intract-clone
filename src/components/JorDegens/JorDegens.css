@@ -1,0 +1,15 @@
+.hero-head-academy {
+    position: relative;
+}
+
+.hero-head-academy>img:nth-child(1) {
+    width: 235px;
+    transition: top .5s ease;
+}
+
+.for-degens {
+    position: absolute;
+    width: 100px;
+    bottom: -45px;
+    right: -45px;
+}
